@@ -80,8 +80,67 @@ nav li {
 .section4{
     background-image: url(images/pexels-1.jpeg);
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
+.section4 h1{
+    color: #fff;
+    position: relative;
+    top: -100px;
+}
+
+#letter{
+    position: relative;
+    top: -50px;
+    width: 80px;
+    padding: 20px;
+    font-size:20px;
+    color: purple;
+    text-align: center;
+}
+
+#letter:focus {
+    outline: 2px solid orange;
+}
+
+#submit{
+    position: relative;
+    top:-30px;
+    border-color: transparent;
+    padding: 10px;
+    font-size: 22px;
+    background-color: #fff;
+    color:purple; 
+    cursor: pointer;
+}
+
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 200px;    
+}
+#word {
+    font-size: 35px;
+}
+
+#hint {
+    position: relative;
+    top: -75px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+}
+.section4 h4{
+    color:red;
+    font-size: 20px;
+}
 .header{
     color: #fff;
     position: relative;
