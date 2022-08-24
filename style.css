@@ -42,10 +42,43 @@ nav li {
     background-attachment: fixed;
 }
 .section3{
-    background-image: url(images/pexels-1.jpeg);
+    background-image: url(images/pexels-2.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section3 h1{
+    text-align: center;
+}
+.section3 p{
+    margin: 20px;
+    font-size: 20px; 
+    color:purple;
+}
+.section3 input{
+    height: 30px;
+    border-color: transparent;
+    color: purple;
+}
+.section3 input::placeholder{
+    text-align: center;
+    color: rgb(235,157,235);
+    font-style: italic;
+}
+#button{
+    color:#fff;
+    background-color: purple;
+    font-size: 18px;
+    padding: 10px;
+    border-color: transparent;
+    cursor: pointer; 
+}
+#sentence{
+    width: 80%;
 }
 .section4{
-    background-image: url(images/pexels-2.jpeg);
+    background-image: url(images/pexels-1.jpeg);
     background-attachment: fixed;
 }
 
@@ -99,7 +132,7 @@ nav li {
 @media only screen and (max-width:700px){
     .header{
         width: 80%;
-    }
+    }ß
     #p1{
         width: 80%;
         left: 10%;
