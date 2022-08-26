@@ -62,23 +62,24 @@ var splitWord = word.split("");
 
 var emptySplitword = [];
 
-console.log(splitWord)
+
 
 for (i = 0; i < splitWord.length; i++) {
     emptySplitword[i] = "-"
-    console.log(emptySplitword);
+    console.log(emptySplitword)
     document.getElementById("word").innerHTML = emptySplitword.join(" ")
 }
 
 function enterLetter() {
-    var length = document.getElementById("letter").value
+    var letter = document.getElementById("letter").value
 
     for( x = 0; x < splitWord.length; x++) {
         if(letter == splitWord[x]) {
             emptySplitword[x] = letter;
-            w.innerHTML = emptySplitword.join(" ");
+            document.getElementById("word").innerHTML = emptySplitword.join(" ");
             document.getElementById("letter").value = "";
             correct.push(1)
+
         }
         else{
             document.getElementById("letter").value = "";
@@ -86,7 +87,7 @@ function enterLetter() {
     }
 
     if(correct.length == emptySplitword.length){
-        alert("THE END")
+        alert("You got it WRONG (just kidding you got)")
     }else if(counter > 1){
         counter -= 1;
         document.getElementById("wrong").innerHTML = counter
